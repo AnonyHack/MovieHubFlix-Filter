@@ -11,7 +11,7 @@ from typing import Union, Optional, AsyncGenerator
 from aiohttp import web
 
 
-class TechVJXBot(Client):
+class MovieHubFlix(Client):
 
     def __init__(self):
         super().__init__(
@@ -66,7 +66,7 @@ class TechVJXBot(Client):
                 yield message
                 current += 1
       
-TechVJBot = TechVJXBot()
+MovieHubFlix = MovieHubFlix()
 
 multi_clients = {}
 work_loads = {}
