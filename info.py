@@ -13,13 +13,13 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'MovieHubFlix')
-API_ID = int(environ.get('API_ID', '25753873'))
-API_HASH = environ.get('API_HASH', '3a5cdc2079cd76af80586102bd9761e2')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8103554826:AAGtBTmwrci1sT-8QeOiKvpsA_2x7GSgni0")
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split()
+PICS = (environ.get('PICS', 'https://t.me/c/2681833322/7')).split()
 
 
 # Admins & Users
@@ -61,7 +61,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ramybeginning:ALLAHAKBAr%40232956@cluster0.ja2zly9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "MovieHubFlix")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'MovieCollection')
 
