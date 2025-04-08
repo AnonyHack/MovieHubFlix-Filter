@@ -8,7 +8,7 @@ import re, math, logging, secrets, mimetypes, time
 from info import *
 from aiohttp import web
 from aiohttp.http_exceptions import BadStatusLine
-from MovieHubFlix.bot import multi_clients, work_loads, TechVJBot
+from MovieHubFlix.bot import multi_clients, work_loads, MovieHubFlix
 from MovieHubFlix.server.exceptions import FIleNotFound, InvalidHash
 from MovieHubFlix import StartTime, __version__
 from MovieHubFlix.util.custom_dl import ByteStreamer
